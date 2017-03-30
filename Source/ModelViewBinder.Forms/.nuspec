@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <files>
-      <file src ="bin\Release\*.*" target="lib/net45" />
-    </files>
+   
     <id>ModelViewBinder.Forms</id>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <authors>Lucas Teles</authors>
     <owners>Lucas Teles</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -17,4 +15,7 @@
       <dependency id="ModelViewBinder" />
     </dependencies>
   </metadata>
+  <files>
+    <file src ="bin\Release\*.*" target="lib/net45" />
+  </files>
 </package>
