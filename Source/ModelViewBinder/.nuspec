@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>ModelViewBinder</id>
-    <version>1.0.5</version>
+    <version>1.0.6</version>
     <authors>Lucas Teles</authors>
     <owners>Lucas Teles</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
