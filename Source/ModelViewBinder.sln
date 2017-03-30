@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBinder.Forms", "ModelViewBinder.Forms\ModelViewBinder.Forms.csproj", "{67F02D3A-D0C4-4710-90EC-50E075236729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBinder.Test", "ModelViewBinder.Test\ModelViewBinder.Test.csproj", "{CD38E26E-7663-49F6-80C7-91078C5E6FFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBinder", "ModelViewBinder\ModelViewBinder.csproj", "{8B2990C5-F8A8-4939-A6C8-97B5D1CB0FF9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelViewBinder", "ModelViewBinder\ModelViewBinder.csproj", "{6209EFEE-47A1-494D-9CA6-73A464081742}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBinder.Test", "ModelViewBinder.Test\ModelViewBinder.Test.csproj", "{9DEF0A9D-C542-48E7-857E-76B6597395A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBinder.Forms.Test", "ModelViewBinder.Forms.Test\ModelViewBinder.Forms.Test.csproj", "{7C210B21-B905-4838-BCF3-B09297401680}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModelViewBinder.Forms.Test", "ModelViewBinder.Forms.Test\ModelViewBinder.Forms.Test.csproj", "{6D1FAD2E-6A51-4645-BBAF-FE5810477817}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,18 +21,18 @@ Global
 		{67F02D3A-D0C4-4710-90EC-50E075236729}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67F02D3A-D0C4-4710-90EC-50E075236729}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F02D3A-D0C4-4710-90EC-50E075236729}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CD38E26E-7663-49F6-80C7-91078C5E6FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CD38E26E-7663-49F6-80C7-91078C5E6FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CD38E26E-7663-49F6-80C7-91078C5E6FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CD38E26E-7663-49F6-80C7-91078C5E6FFF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6209EFEE-47A1-494D-9CA6-73A464081742}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6209EFEE-47A1-494D-9CA6-73A464081742}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6209EFEE-47A1-494D-9CA6-73A464081742}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6209EFEE-47A1-494D-9CA6-73A464081742}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7C210B21-B905-4838-BCF3-B09297401680}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7C210B21-B905-4838-BCF3-B09297401680}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7C210B21-B905-4838-BCF3-B09297401680}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7C210B21-B905-4838-BCF3-B09297401680}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B2990C5-F8A8-4939-A6C8-97B5D1CB0FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B2990C5-F8A8-4939-A6C8-97B5D1CB0FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B2990C5-F8A8-4939-A6C8-97B5D1CB0FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B2990C5-F8A8-4939-A6C8-97B5D1CB0FF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DEF0A9D-C542-48E7-857E-76B6597395A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DEF0A9D-C542-48E7-857E-76B6597395A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DEF0A9D-C542-48E7-857E-76B6597395A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DEF0A9D-C542-48E7-857E-76B6597395A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D1FAD2E-6A51-4645-BBAF-FE5810477817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D1FAD2E-6A51-4645-BBAF-FE5810477817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D1FAD2E-6A51-4645-BBAF-FE5810477817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D1FAD2E-6A51-4645-BBAF-FE5810477817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

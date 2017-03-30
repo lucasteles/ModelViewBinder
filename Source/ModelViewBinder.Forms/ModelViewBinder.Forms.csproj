@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ModelViewBinder.Forms</RootNamespace>
     <AssemblyName>ModelViewBinder.Forms</AssemblyName>
-    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -48,9 +48,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ModelViewBinder\ModelViewBinder.csproj">
-      <Project>{6209efee-47a1-494d-9ca6-73a464081742}</Project>
+      <Project>{8b2990c5-f8a8-4939-a6c8-97b5d1cb0ff9}</Project>
       <Name>ModelViewBinder</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
