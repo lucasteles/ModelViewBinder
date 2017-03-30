@@ -109,10 +109,9 @@ For enable
    binder.Bind(e => e.A, target, e => e.X).Then(() => /* ... */);
 ```
 
-### Windows Forms Binder 
-[![Nuget](https://img.shields.io/nuget/v/ModelViewBinder.Forms.svg)](https://www.nuget.org/packages/ModelViewBinder.Forms/)
+## Windows Forms Binder [![Nuget](https://img.shields.io/nuget/v/ModelViewBinder.Forms.svg)](https://www.nuget.org/packages/ModelViewBinder.Forms/)
 
-## Installing
+### Installing
 To install from Nuget
 ```powershell
 Install-Package ModelViewBinder.Forms
