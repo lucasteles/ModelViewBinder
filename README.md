@@ -4,7 +4,7 @@
 
 ModelViewBinder
 =======
-ModelViewBinder aims to support as simple two way binding definition.
+ModelViewBinder aims to support a simple two way binding definition.
 
 *(For Windows Forms see the section bellow)
 
@@ -80,11 +80,11 @@ binder.RegisterDispose(disposable);
 ```
 
 ##### Automatic update View Model when target changes
-You have to implement the ITargetWithChangeEvent interface and fire the ValueChanged event
+You have to implement the `ITargetWithChangeEvent` interface and fire the `ValueChanged` event
 
 
 ##### More simple bind
-If are you working with some type of control, you can implement `ITargetWithValue<type>` or `ITargetWithValue`, it has a Value property which is automatically recognized by the binder
+If are you working with some type of control, you can implement `ITargetWithValue<type>` or `ITargetWithValue`, it has a `Value` property which is automatically recognized by the binder
 
 ```C#
    binder.Bind(e => e.A, target);
@@ -142,4 +142,4 @@ if you dont want this behavior you can disable:
    binder.AutoFillSourceWhenTargetChanges = false;
 ```
 
-For targets derivated of Windows.Form.Control, you dont need to implement ITargetWithEnabled, the methods `EnableAll` and `DisableAll` will recognize the Control and change properly the Enable property
+For targets derivated of Windows.Form.Control, you dont need to implement `ITargetWithEnabled`, the methods `EnableAll` and `DisableAll` will recognize the Control and change properly the `Enabled` property
