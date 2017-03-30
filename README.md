@@ -118,7 +118,8 @@ Install-Package ModelViewBinder.Forms
 ```
 
 
-For window form you should use the `FormModelViewBinder<SourceType>`, a usage example.
+For window form you should use `FormModelViewBinder<SourceType>`
+
 ```C#
     var source = new Source();
     var binder = new FormModelViewBinder<Source>(source);
