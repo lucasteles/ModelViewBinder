@@ -32,9 +32,9 @@ namespace ModelViewBinder
         }
 
 
-        public IModelViewBinderWithCallback<TSource> Bind<TTarget>(Expression<Func<TSource, object>> expression, TTarget target) where TTarget : class, ITargetWithValue
+        public IModelViewBinderWithCallback<TSource> Bind(Expression<Func<TSource, object>> expression, ITargetWithValue target)
         {
-            var register = new RegisterItem<TSource, object, TTarget>(expression, target, e => e.Value);
+            var register = new RegisterItem<TSource, object, ITargetWithValue>(expression, target, e => e.Value);
 
             Add(register);
 
