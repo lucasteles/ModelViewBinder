@@ -11,6 +11,7 @@
     <copyright>Copyright 2017</copyright>
     <tags>View Model Binder</tags>
     <dependencies>
+      <dependency id="ModelViewBinder" />
     </dependencies>
   </metadata>
 </package>
