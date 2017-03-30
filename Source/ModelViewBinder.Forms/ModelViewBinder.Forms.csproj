@@ -47,12 +47,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ModelViewBinder\ModelViewBinder.csproj">
-      <Project>{8b2990c5-f8a8-4939-a6c8-97b5d1cb0ff9}</Project>
-      <Name>ModelViewBinder</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <None Include=".nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

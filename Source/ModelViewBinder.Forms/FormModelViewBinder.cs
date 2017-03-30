@@ -45,7 +45,7 @@ namespace ModelViewBinder.Forms
 
         protected override void TryApplyChangeEvent(IRegisterItem<TSource> item)
         {
-            IDisposable observable = null;
+            
             var target = item.GeTTarget();
              Action<object, EventArgs> eventBody = (object sender, EventArgs e) => {
                  if (AutoFillSourceWhenTargetChanges) item.FillSource(_Model);
@@ -93,7 +93,7 @@ namespace ModelViewBinder.Forms
             }
 
 
-            RegisterDispose(observable);
+            
         }
 
      

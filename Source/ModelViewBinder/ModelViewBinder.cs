@@ -125,15 +125,12 @@ namespace ModelViewBinder
 
         protected virtual void TryApplyChangeEvent(IRegisterItem<TSource> item)
         { 
-                IDisposable observable = null;
 
                 if (item.GeTTarget() is ITargetWithChangeEvent)
                 {
                     var target = item.GeTTarget() as ITargetWithChangeEvent;
                     target.ValueChanged += (object sender, EventArgs e) => { item.FillSource(_Model);  };
-                 }
-
-               RegisterDispose(observable);
+                 }               
 
         }
 
@@ -159,7 +156,10 @@ namespace ModelViewBinder
 
 
         public void RegisterDispose(IDisposable item)
-            => BindersToDispose.Add(item);
+        {
+            if (item != null)
+                BindersToDispose.Add(item);
+        }
     }
 
 }
