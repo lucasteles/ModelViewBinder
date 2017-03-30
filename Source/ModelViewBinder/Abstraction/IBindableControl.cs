@@ -3,9 +3,9 @@
 namespace ModelViewBinder
 {
 
-    public interface ITargetWithValue : ITargetWithValue<object>
+    public interface ITargetWithValue : ITargetWithChangeEvent
     {
-
+        object Value { get; set;}
     }
 
     public interface ITargetWithValue<TValue> : ITargetWithChangeEvent
