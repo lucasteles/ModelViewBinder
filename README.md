@@ -84,7 +84,7 @@ You have to implement the ITargetWithChangeEvent interface and fire the ValueCha
 
 
 ##### More simple bind
-If are you working with some type of control, you can implement `ITargetWithValue\<type>` or `ITargetWithValue`, it has a Value property which is automatically recognized by the binder
+If are you working with some type of control, you can implement `ITargetWithValue<type>` or `ITargetWithValue`, it has a Value property which is automatically recognized by the binder
 
 ```C#
    binder.Bind(e => e.A, target);
@@ -118,7 +118,7 @@ Install-Package ModelViewBinder.Forms
 ```
 
 
-For window form you should use the `FormModelViewBinder\<SourceType>`, a usage example.
+For window form you should use the `FormModelViewBinder<SourceType>`, a usage example.
 ```C#
     var source = new Source();
     var binder = new FormModelViewBinder<Source>(source);
