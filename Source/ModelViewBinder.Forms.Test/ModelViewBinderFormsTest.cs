@@ -30,6 +30,7 @@ namespace ModelViewBinder.Forms.Test
                 .Bind(e => e.ValueForUpDown, form.numericUpDown1, e => e.Value)
                 .Bind(e => e.ValueForDatePicker, form.dateTimePicker1, e => e.Value)
                 .Bind(e => e.ValueForCheckBox, form.checkBox1, e => e.Checked)
+                .Bind(e => e.ValueForTextbox, form.myTextBox1)
             ;
 
 
@@ -50,7 +51,9 @@ namespace ModelViewBinder.Forms.Test
                 source.ValueForComboBox == (int)form.comboBox1.SelectedValue &&
                 source.ValueForUpDown == form.numericUpDown1.Value &&
                 source.ValueForDatePicker == form.dateTimePicker1.Value &&
-                source.ValueForCheckBox == form.checkBox1.Checked;
+                source.ValueForCheckBox == form.checkBox1.Checked &&
+                source.ValueForTextbox == form.myTextBox1.Value.ToString()
+           ;
 
             Assert.True(result);
 

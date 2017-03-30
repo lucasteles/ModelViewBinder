@@ -34,6 +34,7 @@
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.myTextBox1 = new ModelViewBinder.Forms.MyTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -84,11 +85,20 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(217, 22);
             this.dateTimePicker1.TabIndex = 7;
             // 
+            // myTextBox1
+            // 
+            this.myTextBox1.Location = new System.Drawing.Point(61, 401);
+            this.myTextBox1.Name = "myTextBox1";
+            this.myTextBox1.Size = new System.Drawing.Size(170, 22);
+            this.myTextBox1.TabIndex = 8;
+            this.myTextBox1.Value = "";
+            // 
             // FormTest
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(392, 435);
+            this.Controls.Add(this.myTextBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.numericUpDown1);
@@ -112,5 +122,6 @@
         public System.Windows.Forms.NumericUpDown numericUpDown1;
         public System.Windows.Forms.CheckBox checkBox1;
         public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public MyTextBox myTextBox1;
     }
 }
