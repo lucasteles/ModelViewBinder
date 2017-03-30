@@ -109,6 +109,10 @@ For enable
    binder.Bind(e => e.A, target, e => e.X).Then(() => /* ... */);
 ```
 
+##### Interface for Dependency Injection
+If do you want to inject the `ModelViewBinder<SourceType>` as a dependency you can use `IModelViewBinder<SourceType>` interface.
+
+
 ## Windows Forms Binder [![Nuget](https://img.shields.io/nuget/v/ModelViewBinder.Forms.svg)](https://www.nuget.org/packages/ModelViewBinder.Forms/)
 
 ### Installing
@@ -144,3 +148,6 @@ if you dont want this behavior you can disable:
 ```
 
 For targets derivated of Windows.Form.Control, you dont need to implement `ITargetWithEnabled`, the methods `EnableAll` and `DisableAll` will recognize the Control and change properly the `Enabled` property
+
+
+Tks
