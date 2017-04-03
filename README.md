@@ -47,26 +47,26 @@ binder.RegisterDispose(disposable);
 
 ##### Bind a view model property to other class property
 ```C#
- binder.Bind(e => e.A, target, e => e.X);
+ binder.Bind(src => src.A, target, tgt => tgt.X);
 ```
 
 ##### Multiple Binds 
 ```C#
  binder
-    .Bind(e => e.A, target, e => e.X)
-    .Bind(e => e.B, target, e => e.Y)
+    .Bind(src => src.A, target, tgt => tgt.X)
+    .Bind(src => src.B, target, tgt => tgt.Y)
  ;
 ```
 
 
 ##### Bind an integer view model property to a string property
 ```C#
- binder.Bind(e => e.A, target, e => e.X, Convert.ToString);
+ binder.Bind(src => src.A, target, tgt => tgt.X, Convert.ToString);
 ```
 
 ##### Two way bind of an integer view model property to a string property 
 ```C#
- binder.Bind(e => e.A, target, e => e.X, Convert.ToString, int.Parse);
+ binder.Bind(src => src.A, target, tgt => tgt.X, Convert.ToString, int.Parse);
 ```
 
 ##### Update all view model properties 
@@ -87,7 +87,7 @@ You have to implement the `ITargetWithChangeEvent` interface and fire the `Value
 If are you working with some type of control, you can implement `ITargetWithValue<type>` or `ITargetWithValue`, it has a `Value` property which is automatically recognized by the binder
 
 ```C#
-   binder.Bind(e => e.A, target);
+   binder.Bind(src => src.A, target);
 ```
 ##### Enable or disable targets
 If are you working with some type of control, you can implement `ITargetWithEnabled`, it has a Enabled property, commonly used in UI controls, if you want to set this property of all binded targets you can use:
@@ -106,7 +106,7 @@ For enable
 
 ##### Bind Callback 
 ```C#
-   binder.Bind(e => e.A, target, e => e.X).Then(() => /* ... */);
+   binder.Bind(src => src.A, target, tgt => tgt.X).Then(() => /* ... */);
 ```
 
 ##### Interface for Dependency Injection
@@ -129,12 +129,12 @@ For window form you should use `FormModelViewBinder<SourceType>`
     var binder = new FormModelViewBinder<Source>(source);
     
     binder
-       .Bind(e => e.ValueForTextbox, textBox1, e => e.Text)
-       .Bind(e => e.ValueForRichText, richTextBox1, e => e.Text)
-       .Bind(e => e.ValueForComboBox, comboBox1, e => e.SelectedValue)
-       .Bind(e => e.ValueForUpDown, numericUpDown1, e => e.Value)
-       .Bind(e => e.ValueForDatePicker, dateTimePicker1, e => e.Value)
-       .Bind(e => e.ValueForCheckBox, checkBox1, e => e.Checked)
+       .Bind(src => src.ValueForTextbox, textBox1, tgt => tgt.Text)
+       .Bind(src => src.ValueForRichText, richTextBox1, tgt => tgt.Text)
+       .Bind(src => src.ValueForComboBox, comboBox1, tgt => tgt.SelectedValue)
+       .Bind(src => src.ValueForUpDown, numericUpDown1, tgt => tgt.Value)
+       .Bind(src => src.ValueForDatePicker, dateTimePicker1, tgt => tgt.Value)
+       .Bind(src => src.ValueForCheckBox, checkBox1, tgt => tgt.Checked)
     ;
     
     binder.FillTargets();
